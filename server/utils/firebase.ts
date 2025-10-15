@@ -10,27 +10,20 @@ export const initAdmin = async () => {
   // console.log(JSON.stringify(json));
 
   try {
-     console.log('⚙️  Initializing Firebase Admin...');
-    
-  const cert = JSON.parse(config.GOOGLE_APPLICATION_CREDENTIALS);
+    const cert = JSON.parse(config.GOOGLE_APPLICATION_CREDENTIALS);
 
     if (!cert) throw new Error('Missing GOOGLE_APPLICATION_CREDENTIALS env');
 
-
-  if (!admin.apps.length) {
-    admin.initializeApp({
-      credential: admin.credential.cert(cert),
-    });
-  }
-    console.log('✅ Firebase Admin initialized');
-  return admin;
-    
+    if (!admin.apps.length) {
+      admin.initializeApp({
+        credential: admin.credential.cert(cert),
+      });
+    }
+    return admin;
   } catch (err) {
-     console.error('🔥 Firebase Admin init failed:', err);
-      throw err;
+    console.error('🔥 Firebase Admin init failed:', err);
+    throw err;
   }
-
-
 };
 
 export const adminInstance = initAdmin();
