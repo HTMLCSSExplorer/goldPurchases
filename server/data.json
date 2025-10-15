@@ -1,0 +1,224 @@
+
+
+{
+  "success": true,
+  "message": "Query Success",
+  "data": [
+    {
+      "key": "14 AYAR",
+      "buy": "3.134,42",
+      "sell": "4.225,46",
+      "percent": "0.63",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:56"
+    },
+    {
+      "key": "22 AYAR",
+      "buy": "5.189,18",
+      "sell": "5.425,15",
+      "percent": "0.63",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:53"
+    },
+    {
+      "key": "ALTIN GÜMÜŞ",
+      "buy": "78,05",
+      "sell": "81,82",
+      "percent": "2.32",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:54"
+    },
+    {
+      "key": "ESKİ ATA",
+      "buy": "38.077",
+      "sell": "38.364",
+      "percent": "0.62",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:55"
+    },
+    {
+      "key": "ESKİ ATA5",
+      "buy": "189.099",
+      "sell": "190.908",
+      "percent": "0.62",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:56"
+    },
+    {
+      "key": "ESKİ ÇEYREK",
+      "buy": "9.202",
+      "sell": "9.308",
+      "percent": "0.50",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:54"
+    },
+    {
+      "key": "ESKİ GREMSE",
+      "buy": "91.840",
+      "sell": "92.900",
+      "percent": "0.31",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:56"
+    },
+    {
+      "key": "ESKİ TAM",
+      "buy": "36.965",
+      "sell": "37.333",
+      "percent": "0.47",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:55"
+    },
+    {
+      "key": "ESKİ YARIM",
+      "buy": "18.368",
+      "sell": "18.609",
+      "percent": "0.46",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:55"
+    },
+    {
+      "key": "EUR/KG",
+      "buy": "117.270",
+      "sell": "117.910",
+      "percent": "0.30",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:53"
+    },
+    {
+      "key": "GRAM ALTIN",
+      "buy": "5.676,07",
+      "sell": "5.748,94",
+      "percent": "0.63",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:54"
+    },
+    {
+      "key": "GÜMÜŞ ONS",
+      "buy": "51,51",
+      "sell": "51,54",
+      "percent": "-1.57",
+      "arrow": "down",
+      "last_update": "14.10.2025 17:41:57"
+    },
+    {
+      "key": "GÜMÜŞ TL",
+      "buy": "69,578",
+      "sell": "72,836",
+      "percent": "-1.44",
+      "arrow": "down",
+      "last_update": "14.10.2025 17:41:56"
+    },
+    {
+      "key": "GÜMÜŞ USD",
+      "buy": "1.666,00",
+      "sell": "1.741,00",
+      "percent": "-1.54",
+      "arrow": "down",
+      "last_update": "14.10.2025 17:41:57"
+    },
+    {
+      "key": "Has Altın",
+      "buy": "5.705,43",
+      "sell": "5.732,58",
+      "percent": "0.64",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:53"
+    },
+    {
+      "key": "ONS",
+      "buy": "4.130,0",
+      "sell": "4.130,4",
+      "percent": "0.44",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:53"
+    },
+    {
+      "key": "PALADYUM ONS",
+      "buy": "1.490,00",
+      "sell": "1.497,00",
+      "percent": "0.88",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:57"
+    },
+    {
+      "key": "PALADYUM USD",
+      "buy": "37.900",
+      "sell": "48.140",
+      "percent": "1.09",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:57"
+    },
+    {
+      "key": "PLATİN ONS",
+      "buy": "1.632,00",
+      "sell": "1.636,00",
+      "percent": "0.18",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:57"
+    },
+    {
+      "key": "PLATİN USD",
+      "buy": "47.480",
+      "sell": "52.610",
+      "percent": "0.21",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:57"
+    },
+    {
+      "key": "USD/KG",
+      "buy": "135.880",
+      "sell": "136.330",
+      "percent": "0.52",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:53"
+    },
+    {
+      "key": "YENİ ATA",
+      "buy": "38.077",
+      "sell": "38.422",
+      "percent": "0.62",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:55"
+    },
+    {
+      "key": "YENİ ATA5",
+      "buy": "189.103",
+      "sell": "191.199",
+      "percent": "0.47",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:56"
+    },
+    {
+      "key": "YENİ ÇEYREK",
+      "buy": "9.298",
+      "sell": "9.388",
+      "percent": "0.62",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:54"
+    },
+    {
+      "key": "YENİ GREMSE",
+      "buy": "92.353",
+      "sell": "93.187",
+      "percent": "0.62",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:56"
+    },
+    {
+      "key": "YENİ TAM",
+      "buy": "37.079",
+      "sell": "37.361",
+      "percent": "0.62",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:55"
+    },
+    {
+      "key": "YENİ YARIM",
+      "buy": "18.597",
+      "sell": "18.770",
+      "percent": "0.63",
+      "arrow": "up",
+      "last_update": "14.10.2025 17:41:54"
+    }
+  ]
+}
