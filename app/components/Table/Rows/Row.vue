@@ -27,7 +27,10 @@
     <p class="text-center capitalize font-medium">
       {{ lostProfit || 'Loading' }}
     </p>
-    <p class="text-center capitalize font-medium">button</p>
+    <UButton
+    label="delete" color="warning"  class="flex items-center justify-center uppercase font-bold cursor-pointer "
+    @click="deleteRow"
+    />
   </div>
 </template>
 
@@ -56,7 +59,7 @@ const livePrice = computed(() => {
 
   return String(stringToNumber(foundData.buy));
 });
-const emit = defineEmits(['emit-lost-profit-amount']);
+const emit = defineEmits(['emit-lost-profit-amount','handle-delete']);
 const lostProfit = computed(() => {
   const unit = +props.row.unit;
   const cost = +buyCost.value;
@@ -70,6 +73,10 @@ onMounted(async () => {
   
   emit('emit-lost-profit-amount', lostProfit.value);
 });
+
+const deleteRow = ()=>{
+  emit('handle-delete',props.row.id )
+}
 </script>
 
 <style scoped></style>

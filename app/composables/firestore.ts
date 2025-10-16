@@ -34,5 +34,24 @@ export const useFirestore = () => {
     }
   };
 
-  return { initFireStoreDoc, getApiData, serverData };
+  const deletePurchase = async(id,uid)=>{
+
+
+    try {
+          await $fetch('/api/rows/delete',{
+            method:'POST',
+            body:{
+              uid,id
+            }
+          })
+
+      
+    } catch (error) {
+      console.log('❌ Error deleteing item: ', error.message)
+      return ;
+    }
+
+  }
+
+  return { initFireStoreDoc, getApiData, serverData, deletePurchase };
 };
