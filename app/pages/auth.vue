@@ -13,14 +13,14 @@
 <script lang="ts" setup>
 const { signInWithGoogle } = useAuth();
 const { startLoading, finishLoading, isLoading } = useLoadStatus();
-const { userState } = useUserState();
+
+
 
 const loginWithGoogle = async () => {
   startLoading();
   try {
-    const user = await signInWithGoogle();
+     await signInWithGoogle();
     console.log('✅ user logged in with google');
-    userState.value = user;
     await navigateTo('/', { replace: true });
   } catch (error) {
     console.log('❌ Cannot login with google: ', error.message);
