@@ -16,6 +16,8 @@
 <script setup>
 const { retriveRows } = useRows();
 const { userState } = useUserState();
+const { getApiData } = useFirestore();
+
 const { rows } = useStorageState();
 const { startLoading, finishLoading } = useLoadStatus();
 
@@ -37,9 +39,10 @@ const calulateTotalLostProfit = (amount) => {
   totalLostProfit.value += amount;
 };
 onMounted(async () => {
+  await getApiData();
   await getData();
 });
-// 
+//
 </script>
 
 <style scoped></style>

@@ -33,18 +33,7 @@
 
 <script lang="ts" setup>
 const serverData = useLocalStorage('server-data', []);
-const { isLoading, startLoading, finishLoading } = useLoadStatus();
-const getApiData = async () => {
-  startLoading();
-  try {
-    const data = await $fetch('/api/data/fetchAllData');
-    serverData.value = data;
-  } catch (error) {
-    console.log('❌ Error getting data from API server: ', error.message);
-  } finally {
-    finishLoading();
-  }
-};
+const { isLoading } = useLoadStatus();
 const props = defineProps({
   row: {
     type: Object,
@@ -64,6 +53,7 @@ const livePrice = computed(() => {
   const foundData = serverData.value.find(
     (purchase) => purchase.key === props.row.coin
   );
+
   return String(stringToNumber(foundData.buy));
 });
 const emit = defineEmits(['emit-lost-profit-amount']);
@@ -77,7 +67,7 @@ const lostProfit = computed(() => {
 });
 
 onMounted(async () => {
-  await getApiData();
+  
   emit('emit-lost-profit-amount', lostProfit.value);
 });
 </script>
