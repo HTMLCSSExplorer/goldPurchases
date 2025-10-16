@@ -14,12 +14,11 @@
 </template>
 
 <script setup>
-const { retriveRows } = useRows();
-const { userState } = useUserState();
-const { getApiData } = useFirestore();
-
-const { rows } = useStorageState();
 const { startLoading, finishLoading } = useLoadStatus();
+const { getApiData } = useFirestore();
+const { userState } = useUserState();
+const { retriveRows } = useRows();
+const { rows } = useStorageState();
 
 const getData = async () => {
   const uid = userState.value.uid;
