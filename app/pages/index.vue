@@ -39,6 +39,7 @@ const calulateTotalLostProfit = (amount) => {
 onMounted(async () => {
   await getData();
 });
+// 
 </script>
 
 <style scoped></style>
