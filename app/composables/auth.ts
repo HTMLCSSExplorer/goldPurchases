@@ -2,6 +2,7 @@ import {
   GoogleAuthProvider,
   onAuthStateChanged,
   signInWithPopup,
+  signOut,
 } from 'firebase/auth';
 
 export const useAuth = () => {
@@ -37,5 +38,13 @@ export const useAuth = () => {
     }
   };
 
-  return { getCurrentUser, signInWithGoogle };
+  const signOutUser = async () => {
+    try {
+      await signOut($auth);
+    } catch (error) {
+      console.log('❌ Error signing in with Google: ', error.message);
+    }
+  };
+
+  return { getCurrentUser, signInWithGoogle , signOutUser};
 };

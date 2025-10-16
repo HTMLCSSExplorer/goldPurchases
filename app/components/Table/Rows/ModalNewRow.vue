@@ -1,5 +1,10 @@
 <template>
-  <UModal v-model:open="open" :transition="false" title="Add a new purchase">
+  <UModal
+    v-if="userState.uid"
+    v-model:open="open"
+    :transition="false"
+    title="Add a new purchase"
+  >
     <UButton label="Open" color="warning" variant="solid" />
 
     <template #body>
@@ -56,14 +61,17 @@
 </template>
 
 <script lang="ts" setup>
+const { newRow } = useRows();
+const { finishLoading, isLoading, startLoading } = useLoadStatus();
+const { userState } = useUserState();
+
 const open = ref(false);
 const formData = ref({
   coin: '',
   unit: 0,
   buyPrice: 0,
 });
-const { newRow } = useRows();
-const { finishLoading, isLoading, startLoading } = useLoadStatus();
+
 const addNewRow = async () => {
   startLoading();
 
