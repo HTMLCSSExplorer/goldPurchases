@@ -1,5 +1,3 @@
-
-
 {
   "success": true,
   "message": "Query Success",
@@ -14,7 +12,7 @@
     },
     {
       "key": "22 AYAR",
-      "buy": "5.189,18",
+      "buy": "35.189,18",
       "sell": "5.425,15",
       "percent": "0.63",
       "arrow": "up",

@@ -1,4 +1,6 @@
 import { adminInstance } from '#imports';
+import { getDB } from '~~/server/utils/db';
+
 export default defineEventHandler(async (event) => {
   const admin = await adminInstance;
 
@@ -10,8 +12,8 @@ export default defineEventHandler(async (event) => {
       statusCode: 500,
       statusMessage: '❌ No UID provided',
     });
+  const db = await getDB();
 
-  const db = admin.firestore();
   const docRef = db.collection('users').doc(uid);
   const snapShot = await docRef.get();
 
