@@ -1,4 +1,5 @@
 export const useFirestore = () => {
+
   const { startLoading, finishLoading } = useLoadStatus();
   const serverData = useLocalStorage('server-data', []);
 
@@ -33,5 +34,5 @@ export const useFirestore = () => {
     }
   };
 
-  return { initFireStoreDoc, getApiData };
+  return { initFireStoreDoc, getApiData, serverData };
 };
